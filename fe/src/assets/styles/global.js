@@ -10,6 +10,10 @@ export default createGlobalStyle `
     }
 
     body {
-        background: #F6F5FC;
+        background: ${({ theme }) => theme.colors.background};
+    }
+
+    button { 
+        cursor: pointer;
     }
 `;
