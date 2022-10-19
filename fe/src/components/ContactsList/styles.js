@@ -64,4 +64,31 @@ export const Card = styled.div`
     background: #fff;
     border-radius: 4px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+        .contact-name {
+            display: flex;
+            align-items: center;
+        
+            small {
+                background: ${({ theme }) => theme.colors.primary.lighter};
+                border-radius: 4px;
+                padding: 6px 3px;
+                font-size: 12px;
+                font-weight: bold;
+                color: ${({ theme }) => theme.colors.primary.main};
+                text-transform: uppercase;
+                margin-left: 8px;
+            }
+        }
+
+        span{
+            display: block;
+            font-size: 14px;
+        }
+
+    }
 `;
