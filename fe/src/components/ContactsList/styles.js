@@ -29,3 +29,39 @@ export const Header = styled.header`
         }
     }
 `;
+
+
+export const DivisonLine = styled.div` 
+    margin-top: 16px;
+    color: #BCBCBC;
+    opacity: 0.2;
+    border-radius: 1px;
+`;
+
+
+export const ListContainer = styled.div` 
+    margin-top: 16px;
+    margin-bottom: 8px;
+    
+    header {
+        button{
+            background-color: transparent;
+            border: none;
+            display: flex; 
+            align-items: center;
+
+            span {
+                margin-right: 8px;
+                font-weight: bold;
+                color: ${({ theme }) => theme.colors.primary.main};
+            }
+        }
+    }
+`;
+
+export const Card = styled.div`
+    padding: 16px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+`;
