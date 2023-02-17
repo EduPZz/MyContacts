@@ -1,13 +1,35 @@
 import styled from "styled-components";
 
-export const Container = styled.div` 
+export const Container = styled.div`
     margin-top: 32px;
+`;
+
+
+export const InputSearchContainer = styled.div`
+    margin-top: 48px;
+    width: 100%;
+
+    input {
+        width: 100%;
+        border-radius: 25px;
+        background-color: #fff;
+        border: none;
+        height: 50px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+        outline: 0;
+        padding: 0 16px;
+
+        &::placeholder{
+            color: #BCBCBC;
+        }
+    }
 `;
 
 export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 32px;
 
     strong {
         font-size: 24px;
@@ -30,7 +52,7 @@ export const Header = styled.header`
 `;
 
 
-export const DivisonLine = styled.div` 
+export const DivisonLine = styled.div`
     margin-top: 16px;
     color: #BCBCBC;
     opacity: 0.2;
@@ -38,15 +60,15 @@ export const DivisonLine = styled.div`
 `;
 
 
-export const ListContainer = styled.div` 
+export const ListContainer = styled.div`
     margin-top: 16px;
     margin-bottom: 8px;
-    
+
     header {
         button{
             background-color: transparent;
             border: none;
-            display: flex; 
+            display: flex;
             align-items: center;
 
             span {
@@ -75,7 +97,7 @@ export const Card = styled.div`
         .contact-name {
             display: flex;
             align-items: center;
-        
+
             small {
                 background: ${({ theme }) => theme.colors.primary.lighter};
                 border-radius: 4px;
@@ -105,4 +127,4 @@ export const Card = styled.div`
             margin-left: 8px;
         }
     }
-`;NewContact
+`;
