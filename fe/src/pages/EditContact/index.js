@@ -1,9 +1,15 @@
 import PageHeader from "../../components/PageHeader";
 
+import ContactForm from "../../components/ContactForm";
+
 export default function EditContact(){
     return (
-      <PageHeader
-        title="Editar Eduardo Pozzobom"
-      />
+      <>
+        <PageHeader
+          title="Editar Eduardo Pozzobom"
+        />
+
+        <ContactForm buttonlabel="Salvar alterações"/>
+      </>
     );
 }
