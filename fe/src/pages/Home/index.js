@@ -11,7 +11,7 @@ export default function Home(){
   return (
     <Container>
 
-      <Moldal />
+      <Moldal danger/>
 
       <InputSearchContainer>
         <input type="text" placeholder="Pesquisar pelo nome"/>
